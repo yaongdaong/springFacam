@@ -8,6 +8,7 @@ public class Browser implements IBrowser{
 
     @Override
     public Html show() {
-        return null;
+        System.out.println("browser loading html from "+url);
+        return new Html(url);
     }
 }
